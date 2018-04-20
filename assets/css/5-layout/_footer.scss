@@ -1,0 +1,48 @@
+footer {
+  padding: 3rem 0 2.5rem;
+
+  .container {
+    @include media-breakpoint-up(md) {
+      display: flex;
+      justify-content: space-between;
+    }
+    .footer-logo {
+      width: 25rem;
+      margin: 0 auto;
+      text-align: center;
+
+      @include media-breakpoint-up(md) {
+        text-align: left;
+        padding: 1rem 0;
+      }
+
+
+      img {
+        height: 2rem;
+      }
+    }
+    p {
+      width: 25rem;
+      font-size: 1.4rem;
+      margin: 0 auto;
+    }
+
+    p:nth-of-type(1) {
+      text-align: center;
+      @include media-breakpoint-down(sm) {
+        margin: 2rem auto;
+      }
+    }
+    p:nth-of-type(2) {
+      text-align: center;
+
+      @include media-breakpoint-up(md) {
+        text-align: right;
+      }
+      a {
+        display: block;
+        font-weight: 600;
+      }
+    }
+  }
+}
